@@ -1,0 +1,66 @@
+.my-skills {
+    /* padding: 2em 1em;  */
+} 
+
+.my-skills .main-heading {
+    /* margin-bottom: .5em; */
+}
+
+.skills-information {
+    /* transform: translateX(12%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3em; */
+}
+
+
+/* changing the list-style icon with fontawesome */
+.skills-information .skill-title {
+    /* color: var(--someblack);
+    text-indent: -30px; */
+}
+
+.skills-information .skills li {
+    /* text-indent: 5px;
+    margin-bottom: .5em; */
+}
+
+.skills-information .skills ::marker {
+    /* color: rgb(4, 83, 95);
+    font-family: 'Font Awesome 5 Free';
+    content: '\f058'; */
+}
+
+.view-my-work {
+    /* position: relative;
+    font-size: .95rem;
+    text-decoration: none;
+    color: rgb(230, 221, 221);
+    border: none;
+    border-radius: 4px;
+    padding: .8em 1.5em;
+    padding-right: 2em;
+    background: linear-gradient(to right, #02373f, #136e7c);
+    cursor: pointer; */
+}
+
+.view-my-work:hover {
+    /* background: linear-gradient(to left, #02373f, #136e7c); */
+}
+
+.view-my-work i {
+    /* position: absolute;
+    margin-left: 7px;
+    animation: workView 1s infinite;  */
+}
+ 
+/* hire me animation */
+@keyframes workView {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: 5px;
+    }
+} 

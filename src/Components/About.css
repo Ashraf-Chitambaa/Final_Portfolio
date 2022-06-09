@@ -1,0 +1,141 @@
+.about-me {
+    padding: 1em .5em;
+}
+
+.profile-container.cards {
+    padding: 1em;
+    grid-auto-rows: unset;
+    grid-template-areas: 'images-slide' 'profile-information' 'expertise';
+    transition: box-shadow .3s ease;
+    overflow: hidden;
+}
+
+.profile-pics {
+    grid-area: images-slide;
+    display: grid;
+    place-content: center;
+}
+
+.profile-pics figure {
+    width: 100%;
+    /* padding: .5em; */
+    display: flex;
+    overflow-x: hidden;
+}
+
+.profile-pics figure img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.21);
+    border-radius: 50%;
+    cursor: pointer;
+    animation: auto-change-image 30s infinite;
+    animation-delay: 1s; 
+}
+
+@keyframes auto-change-image {
+    0%, 50% {
+        transform: translateX(0);
+    }
+
+    50.0001%,100% {
+        transform: translateX(-100%)
+    }
+}
+
+.profile-information {
+    grid-area: profile-information;
+    padding: .2em;
+}
+
+.profile-information p {
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.my-skills {
+    grid-area: expertise;
+} 
+
+.my-skills .main-heading {
+    color: var(--somegray) !important;
+    margin-bottom: .5em;
+}
+
+.skills-information {
+    width: 100%;
+    display: grid;
+    grid-template-areas: 'front-end others'  'back-end ..';
+    grid-auto-columns: minmax(120px, 200px);
+    justify-content: center;
+    justify-items: center;
+    gap: var(--smallGap);
+}
+
+.front-end {grid-area: front-end;}
+.back-end {grid-area: back-end;}
+.others-languages {grid-area: others;}
+
+.skill {
+    padding: 0 2em !important;
+}
+
+/* changing the list-style icon with fontawesome */
+.skills-information .skill-title {
+    color: var(--someblack);
+    text-indent: -30px;
+}
+
+.skills-information .skills li {
+    text-indent: 5px;
+    margin-bottom: .5em;
+}
+
+.skills-information .skills ::marker {
+    color: rgb(4, 83, 95);
+    font-family: 'Font Awesome 5 Free';
+    content: '\f058';
+}
+
+.view-my-work {
+    display: inline-block;
+    position: relative;
+    font-size: .95rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(230, 221, 221);
+    padding: .8em 1.5em;
+    padding-right: 2em;
+    background: linear-gradient(to right, #02373f, #136e7c);
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-top: .8em;
+    cursor: pointer;
+}
+
+.view-my-work:hover {
+    background: linear-gradient(to left, #02373f, #136e7c);
+}
+
+.view-my-work i {
+    position: absolute;
+    margin-left: 7px;
+    animation: workView 1s infinite; 
+}
+ 
+/* hire me animation */
+@keyframes workView {
+    0% {
+        margin-top: 0;
+    }
+    100% {
+        margin-top: 5px;
+    }
+} 
+
+.add-shadow {
+    transition:  box-shadow .3s ease;
+    box-shadow: var(--smoothBoxShadow);
+    -moz-box-shadow: var(--smoothBoxShadow);
+}

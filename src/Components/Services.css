@@ -1,0 +1,43 @@
+.services-container {
+    padding: 1em;
+}
+
+.services {
+    /* padding-bottom: 2em; */
+}
+
+.services .service {
+    justify-items: center;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--somewhite);
+    overflow: hidden;
+}
+
+/* 
+FOR THE CARDS
+*/
+.service .icon {
+    font-size: 3rem;
+    color: #0a6775 !important;
+    color: var(--someblack);
+    margin-bottom: .5em;
+    padding: .2em;
+    transition: transform 1s ease;
+}
+
+.service .icon:hover {
+    transform: rotateY(360deg) rotateX(30deg);
+}
+
+.service .service-name {
+    color: var(--someblack);
+    text-transform: capitalize;
+}
+
+.service p {
+    color: var(--someblack);
+    text-align: center;
+}

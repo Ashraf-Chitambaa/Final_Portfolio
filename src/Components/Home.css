@@ -1,0 +1,27 @@
+.home-page {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../Media/WebBackground1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: grid;
+    gap: 6em;
+    min-height: 88vh !important;
+}
+
+.hero-section {
+    color: whitesmoke;
+    place-self: center;
+}
+
+.hero-section h2 {
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+}
+
+.hero-section .career p {
+    text-align: center;
+    font-style: oblique;
+}
+
+

@@ -1,0 +1,71 @@
+.preloader {
+    position: fixed;
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--someblack);
+    z-index: 99;
+    animation: hidden 3s forwards;
+}
+
+ @keyframes hidden {
+    0%, 99% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+} 
+
+.preloader > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.loading1 {
+    width: 75px;
+    height: 75px;
+    border: 5.5px solid var(--loadingColor);
+    border-bottom: 5.5px solid transparent;
+    border-top: 5.5px solid transparent;
+    animation: loading 2s infinite;
+}
+
+.loading2 {
+    width: 60px;
+    height: 60px;
+    border: 5px solid rgb(121, 119, 119);
+    border-right: 5px dashed transparent;
+    border-left: 5px dashed transparent;
+    animation: loading2 2s infinite;
+}
+
+.loading3 {
+    width: 50px;
+    height: 50px;
+    border: 4px solid rgb(121, 119, 119);
+    border-bottom: 4px solid transparent;
+    border-top: 4px solid transparent;
+    animation: loading 2s infinite;
+}
+
+@keyframes loading {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading2 {
+    100% {
+        transform: rotate(-360deg);
+    }
+  
+} 
